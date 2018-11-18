@@ -1,7 +1,12 @@
 .button {
   width:100%;
   padding: 20px;
-  background: #DFDFDF;
+  background: #cfd0d4;
   font-size:20px;
   outline: none;
+  border:1px solid #181818;
+}
+
+.button--orange {
+  background: #ff6d00;
 }

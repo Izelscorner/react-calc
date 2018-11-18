@@ -4,7 +4,7 @@ describe('Calculate Function', () => {
 
     let calculate =  new Calculate();
 
-    test('Reset state values', () => {
+    test('Reset result values', () => {
         calculate.reset();
         let result = calculate.result; 
         expect(result.current).toEqual(null);
@@ -60,7 +60,7 @@ describe('Calculate Function', () => {
         expect(result.outcome).toEqual(10.5);
     })
 
-    test('Concurrent operatord', () => {
+    test('Concurrent all 4 operations', () => {
         calculate.reset();
         calculate.process('5');
         calculate.process('+');

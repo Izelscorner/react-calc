@@ -57,11 +57,12 @@ exports[`<Index /> matches snapshot 1`] = `
             </button>
           </Button>
           <Button
+            additionalClassName="button--orange"
             handleEvent={[Function]}
             value="*"
           >
             <button
-              className="button"
+              className="button button--orange"
               onClick={[Function]}
             >
               *
@@ -105,11 +106,12 @@ exports[`<Index /> matches snapshot 1`] = `
             </button>
           </Button>
           <Button
+            additionalClassName="button--orange"
             handleEvent={[Function]}
             value="-"
           >
             <button
-              className="button"
+              className="button button--orange"
               onClick={[Function]}
             >
               -
@@ -153,11 +155,12 @@ exports[`<Index /> matches snapshot 1`] = `
             </button>
           </Button>
           <Button
+            additionalClassName="button--orange"
             handleEvent={[Function]}
             value="+"
           >
             <button
-              className="button"
+              className="button button--orange"
               onClick={[Function]}
             >
               +
@@ -191,21 +194,22 @@ exports[`<Index /> matches snapshot 1`] = `
           </Button>
           <Button
             handleEvent={[Function]}
-            value="="
+            value="AC"
           >
             <button
               className="button"
               onClick={[Function]}
             >
-              =
+              AC
             </button>
           </Button>
           <Button
+            additionalClassName="button--orange"
             handleEvent={[Function]}
             value="/"
           >
             <button
-              className="button"
+              className="button button--orange"
               onClick={[Function]}
             >
               /
@@ -216,14 +220,15 @@ exports[`<Index /> matches snapshot 1`] = `
           className="button-list__row"
         >
           <Button
+            additionalClassName="button--orange"
             handleEvent={[Function]}
-            value="AC"
+            value="="
           >
             <button
-              className="button"
+              className="button button--orange"
               onClick={[Function]}
             >
-              AC
+              =
             </button>
           </Button>
         </div>

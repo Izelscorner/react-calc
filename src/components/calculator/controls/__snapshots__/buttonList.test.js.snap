@@ -1,223 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Button /> matches snapshot 1`] = `
-<ButtonList
-  handleEvent={[MockFunction]}
->
-  <div
-    className="button-list"
-  >
-    <div
-      className="button-list__row"
-    >
-      <Button
-        handleEvent={[Function]}
-        value="7"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          7
-        </button>
-      </Button>
-      <Button
-        handleEvent={[Function]}
-        value="8"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          8
-        </button>
-      </Button>
-      <Button
-        handleEvent={[Function]}
-        value="9"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          9
-        </button>
-      </Button>
-      <Button
-        handleEvent={[Function]}
-        value="*"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          *
-        </button>
-      </Button>
-    </div>
-    <div
-      className="button-list__row"
-    >
-      <Button
-        handleEvent={[Function]}
-        value="4"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          4
-        </button>
-      </Button>
-      <Button
-        handleEvent={[Function]}
-        value="5"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          5
-        </button>
-      </Button>
-      <Button
-        handleEvent={[Function]}
-        value="6"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          6
-        </button>
-      </Button>
-      <Button
-        handleEvent={[Function]}
-        value="-"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          -
-        </button>
-      </Button>
-    </div>
-    <div
-      className="button-list__row"
-    >
-      <Button
-        handleEvent={[Function]}
-        value="1"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          1
-        </button>
-      </Button>
-      <Button
-        handleEvent={[Function]}
-        value="2"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          2
-        </button>
-      </Button>
-      <Button
-        handleEvent={[Function]}
-        value="3"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          3
-        </button>
-      </Button>
-      <Button
-        handleEvent={[Function]}
-        value="+"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          +
-        </button>
-      </Button>
-    </div>
-    <div
-      className="button-list__row"
-    >
-      <Button
-        handleEvent={[Function]}
-        value="0"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          0
-        </button>
-      </Button>
-      <Button
-        handleEvent={[Function]}
-        value="."
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          .
-        </button>
-      </Button>
-      <Button
-        handleEvent={[Function]}
-        value="="
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          =
-        </button>
-      </Button>
-      <Button
-        handleEvent={[Function]}
-        value="/"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          /
-        </button>
-      </Button>
-    </div>
-    <div
-      className="button-list__row"
-    >
-      <Button
-        handleEvent={[Function]}
-        value="AC"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          AC
-        </button>
-      </Button>
-    </div>
-  </div>
-</ButtonList>
-`;
-
 exports[`<ButtonList /> matches snapshot 1`] = `
 <ButtonList
   handleEvent={[MockFunction]}
@@ -262,11 +44,12 @@ exports[`<ButtonList /> matches snapshot 1`] = `
         </button>
       </Button>
       <Button
+        additionalClassName="button--orange"
         handleEvent={[Function]}
         value="*"
       >
         <button
-          className="button"
+          className="button button--orange"
           onClick={[Function]}
         >
           *
@@ -310,11 +93,12 @@ exports[`<ButtonList /> matches snapshot 1`] = `
         </button>
       </Button>
       <Button
+        additionalClassName="button--orange"
         handleEvent={[Function]}
         value="-"
       >
         <button
-          className="button"
+          className="button button--orange"
           onClick={[Function]}
         >
           -
@@ -358,11 +142,12 @@ exports[`<ButtonList /> matches snapshot 1`] = `
         </button>
       </Button>
       <Button
+        additionalClassName="button--orange"
         handleEvent={[Function]}
         value="+"
       >
         <button
-          className="button"
+          className="button button--orange"
           onClick={[Function]}
         >
           +
@@ -396,21 +181,22 @@ exports[`<ButtonList /> matches snapshot 1`] = `
       </Button>
       <Button
         handleEvent={[Function]}
-        value="="
+        value="AC"
       >
         <button
           className="button"
           onClick={[Function]}
         >
-          =
+          AC
         </button>
       </Button>
       <Button
+        additionalClassName="button--orange"
         handleEvent={[Function]}
         value="/"
       >
         <button
-          className="button"
+          className="button button--orange"
           onClick={[Function]}
         >
           /
@@ -421,14 +207,15 @@ exports[`<ButtonList /> matches snapshot 1`] = `
       className="button-list__row"
     >
       <Button
+        additionalClassName="button--orange"
         handleEvent={[Function]}
-        value="AC"
+        value="="
       >
         <button
-          className="button"
+          className="button button--orange"
           onClick={[Function]}
         >
-          AC
+          =
         </button>
       </Button>
     </div>
