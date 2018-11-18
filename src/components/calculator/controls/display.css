@@ -8,6 +8,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
   position: relative;
+  padding-left: 120px;
 }
 
 .display-branding {
