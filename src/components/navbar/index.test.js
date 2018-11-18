@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 import Navbar from './index';
 import toJson from 'enzyme-to-json';
 
-describe('<Logo />', () => {
+describe('<Navbar />', () => {
   let wrapper;
 
   beforeAll(() => {

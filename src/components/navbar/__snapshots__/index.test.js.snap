@@ -13,3 +13,17 @@ exports[`<Logo /> matches snapshot 1`] = `
    
 </nav>
 `;
+
+exports[`<Navbar /> matches snapshot 1`] = `
+<nav
+  className="nav-bar"
+>
+   
+  <ul>
+    <li>
+      Home
+    </li>
+  </ul>
+   
+</nav>
+`;
