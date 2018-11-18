@@ -26,22 +26,23 @@ export default class Calculate {
 
   calculate() {
     let outcoume = this.result["outcome"];
-
+    let current  = parseFloat(this.result["current"]);
+    
     switch (this.result["operator"]) {
       case "+":
-        outcoume = outcoume + parseFloat(this.result["current"]);
+        outcoume = outcoume + current;
         break;
       case "-":
-        outcoume = outcoume - parseFloat(this.result["current"]);
+        outcoume = outcoume - current;
         break;
       case "/":
-        outcoume = outcoume / parseFloat(this.result["current"]);
+        outcoume = outcoume / current;
         break;
       case "*":
-        outcoume = outcoume * parseFloat(this.result["current"]);
+        outcoume = outcoume * current;
         break;
       default:
-        outcoume = parseFloat(this.result["current"]);
+        outcoume = current;
         break;
     }
 
