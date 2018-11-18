@@ -17,16 +17,16 @@ describe('<Index />', () => {
   });
 
   it('render button list ', () => {
-    let buttonList = wrapper.find(ButtonList);
+    const buttonList = wrapper.find(ButtonList);
     expect(buttonList).toHaveLength(1);
   });
 
   it('render display ', () => {
-    let display = wrapper.find(Display);
+    const display = wrapper.find(Display);
     expect(display).toHaveLength(1);
   });
 
-  it('check initial state value', () => {
+  it('check initial state values', () => {
     const state = wrapper.state();
     expect(state.outcome).toEqual(null);
     expect(state.current).toEqual(null);

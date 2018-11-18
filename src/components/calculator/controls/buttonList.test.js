@@ -17,7 +17,7 @@ describe('<ButtonList />', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
-  it('renders the button and value', () => {
+  it('renders the all button components', () => {
     const buttons = wrapper.find(Button);
     expect(buttons).toHaveLength(17);
   });
