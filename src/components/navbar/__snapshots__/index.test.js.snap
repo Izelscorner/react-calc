@@ -3,5 +3,13 @@
 exports[`<Logo /> matches snapshot 1`] = `
 <nav
   className="nav-bar"
-/>
+>
+   
+  <ul>
+    <li>
+      Home
+    </li>
+  </ul>
+   
+</nav>
 `;
