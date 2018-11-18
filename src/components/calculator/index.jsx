@@ -19,10 +19,13 @@ export default class Calculator extends Component {
 
     this.setState(this.calculate.result);
   }
+  
   render() {
     return (
       <div className="calculator">
-        <Display display={this.state.current || this.state.outcome || 0} />
+        <Display display={this.state.current || this.state.outcome || 0} >
+          {this.props.children}
+        </Display>
         <ButtonList handleEvent={this.handleEvent}  />
       </div>
     )

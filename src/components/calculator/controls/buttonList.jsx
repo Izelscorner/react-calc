@@ -10,30 +10,30 @@ export class ButtonList extends PureComponent {
     return (
       <div className="button-list">
         <div className="button-list__row">
+          <Button value="AC"additionalClassName="button-size-75" handleEvent={this.handleEvent} />
+          <Button value="*" additionalClassName="button--orange" handleEvent={this.handleEvent} />
+        </div>
+        <div className="button-list__row">
           <Button value="7" handleEvent={this.handleEvent} />
           <Button value="8" handleEvent={this.handleEvent} />
           <Button value="9" handleEvent={this.handleEvent} />
-          <Button value="*" additionalClassName="button--orange" handleEvent={this.handleEvent} />
+          <Button value="-" additionalClassName="button--orange" handleEvent={this.handleEvent} />
         </div>
         <div className="button-list__row">
           <Button value="4" handleEvent={this.handleEvent} />
           <Button value="5" handleEvent={this.handleEvent} />
           <Button value="6" handleEvent={this.handleEvent} />
-          <Button value="-" additionalClassName="button--orange" handleEvent={this.handleEvent} />
+          <Button value="+" additionalClassName="button--orange" handleEvent={this.handleEvent} />
         </div>
         <div className="button-list__row">
           <Button value="1" handleEvent={this.handleEvent} />
           <Button value="2" handleEvent={this.handleEvent} />
           <Button value="3" handleEvent={this.handleEvent} />
-          <Button value="+" additionalClassName="button--orange" handleEvent={this.handleEvent} />
-        </div>
-        <div className="button-list__row">
-          <Button value="0" handleEvent={this.handleEvent} />
-          <Button value="." handleEvent={this.handleEvent} />
-          <Button value="AC" handleEvent={this.handleEvent} />
           <Button value="/" additionalClassName="button--orange"  handleEvent={this.handleEvent} />
         </div>
         <div className="button-list__row">
+          <Button value="0" additionalClassName="button-size-50" handleEvent={this.handleEvent}  />
+          <Button value="." handleEvent={this.handleEvent} />
           <Button value="=" additionalClassName="button--orange" handleEvent={this.handleEvent} />
         </div>
       </div>

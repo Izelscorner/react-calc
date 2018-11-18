@@ -3,7 +3,11 @@ import "./display.css"
 export class Display extends PureComponent {
   render() {
     return (
-        <label className="display">{this.props.display}</label>
+        <div className="display">
+           <div className="display-branding">{this.props.children}</div> 
+          <label>{this.props.display}</label>
+        </div> 
+
     )
   }
 }

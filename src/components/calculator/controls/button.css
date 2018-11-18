@@ -1,5 +1,5 @@
 .button {
-  width:100%;
+  width:25%;
   padding: 20px;
   background: #cfd0d4;
   font-size:20px;
@@ -9,4 +9,16 @@
 
 .button--orange {
   background: #ff6d00;
+}
+
+.button-size-50 {
+  width:50%;
+}
+
+.button-size-75 {
+  width:75%;
+}
+
+.button-size-100 {
+  width:100%;
 }

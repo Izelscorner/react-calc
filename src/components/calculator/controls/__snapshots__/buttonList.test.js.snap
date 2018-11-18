@@ -11,6 +11,34 @@ exports[`<ButtonList /> matches snapshot 1`] = `
       className="button-list__row"
     >
       <Button
+        additionalClassName="button-size-75"
+        handleEvent={[Function]}
+        value="AC"
+      >
+        <button
+          className="button button-size-75"
+          onClick={[Function]}
+        >
+          AC
+        </button>
+      </Button>
+      <Button
+        additionalClassName="button--orange"
+        handleEvent={[Function]}
+        value="*"
+      >
+        <button
+          className="button button--orange"
+          onClick={[Function]}
+        >
+          *
+        </button>
+      </Button>
+    </div>
+    <div
+      className="button-list__row"
+    >
+      <Button
         handleEvent={[Function]}
         value="7"
       >
@@ -46,13 +74,13 @@ exports[`<ButtonList /> matches snapshot 1`] = `
       <Button
         additionalClassName="button--orange"
         handleEvent={[Function]}
-        value="*"
+        value="-"
       >
         <button
           className="button button--orange"
           onClick={[Function]}
         >
-          *
+          -
         </button>
       </Button>
     </div>
@@ -95,13 +123,13 @@ exports[`<ButtonList /> matches snapshot 1`] = `
       <Button
         additionalClassName="button--orange"
         handleEvent={[Function]}
-        value="-"
+        value="+"
       >
         <button
           className="button button--orange"
           onClick={[Function]}
         >
-          -
+          +
         </button>
       </Button>
     </div>
@@ -144,13 +172,13 @@ exports[`<ButtonList /> matches snapshot 1`] = `
       <Button
         additionalClassName="button--orange"
         handleEvent={[Function]}
-        value="+"
+        value="/"
       >
         <button
           className="button button--orange"
           onClick={[Function]}
         >
-          +
+          /
         </button>
       </Button>
     </div>
@@ -158,11 +186,12 @@ exports[`<ButtonList /> matches snapshot 1`] = `
       className="button-list__row"
     >
       <Button
+        additionalClassName="button-size-50"
         handleEvent={[Function]}
         value="0"
       >
         <button
-          className="button"
+          className="button button-size-50"
           onClick={[Function]}
         >
           0
@@ -179,33 +208,6 @@ exports[`<ButtonList /> matches snapshot 1`] = `
           .
         </button>
       </Button>
-      <Button
-        handleEvent={[Function]}
-        value="AC"
-      >
-        <button
-          className="button"
-          onClick={[Function]}
-        >
-          AC
-        </button>
-      </Button>
-      <Button
-        additionalClassName="button--orange"
-        handleEvent={[Function]}
-        value="/"
-      >
-        <button
-          className="button button--orange"
-          onClick={[Function]}
-        >
-          /
-        </button>
-      </Button>
-    </div>
-    <div
-      className="button-list__row"
-    >
       <Button
         additionalClassName="button--orange"
         handleEvent={[Function]}
