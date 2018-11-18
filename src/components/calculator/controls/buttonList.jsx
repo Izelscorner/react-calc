@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import Button from "./button";
-import "./buttonList.css"
+import "./buttonList.css";
 export class ButtonList extends PureComponent {
     
     handleEvent = (value) => {

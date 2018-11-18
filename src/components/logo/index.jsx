@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react'
-import './index.css'
+import React, { PureComponent } from 'react';
+import './index.css';
 
 export default class Logo extends PureComponent {
   renderClassName() {

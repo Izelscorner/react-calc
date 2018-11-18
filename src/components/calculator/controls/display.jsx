@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react'
-import "./display.css"
+import React, { PureComponent } from 'react';
+import "./display.css";
 export class Display extends PureComponent {
   render() {
     return (
