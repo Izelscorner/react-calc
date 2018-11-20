@@ -17,14 +17,14 @@ export default class Calculator extends Component {
   handleKeyPress() {
     document.addEventListener('keydown', (e) => {
       e.preventDefault()
-      if(e.key.match(/([0-9])?([+-/*.])?/g)[0].length > 0 || e.key === "Backspace" || e.key === "Enter") {
+      if(e.key.match(/([0-9])?([+-/*.])?(a)?/g)[0].length > 0 || e.key === "Backspace" || e.key === "Enter") {
         this.handleEvent(e.key);
       }
     })
   }
   
   handleEvent = (value) => {
-    if(value === 'AC') {
+    if(value === 'AC' || value === 'a') {
       this.calculate.reset();
     } 
     else if(value === "Backspace"){
