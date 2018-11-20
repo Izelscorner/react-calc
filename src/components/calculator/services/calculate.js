@@ -13,12 +13,9 @@ export default class Calculate {
       this.result["current"] = this.result["current"]
         ? this.result["current"] + value
         : value;
-    } else {
+    } else if (this.result["current"]) {
       // Operator
-      if (this.result["current"]) {
-        this.calculate();
-      }
-
+      this.calculate();
       this.result["operator"] = value;
       this.result["current"] = null;
     }

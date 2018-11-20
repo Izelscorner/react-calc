@@ -47,6 +47,7 @@ describe('Calculate Function', () => {
         let result = calculate.result;
         expect(result.outcome).toEqual(10);
     })
+    
 
     test('Float Number', () => {
         calculate.reset();
@@ -80,6 +81,17 @@ describe('Calculate Function', () => {
 
         let result = calculate.result;
         expect(result.outcome).toEqual(5);
+    })
+
+    test('Edge case initial value as an operator', () => {
+        calculate.reset();
+        calculate.process('*');
+        calculate.process('4');
+        calculate.process('*');
+        calculate.process('4');
+        calculate.process('=');
+        let result = calculate.result;
+        expect(result.outcome).toEqual(16);
     })
 
 })
