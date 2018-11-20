@@ -22,7 +22,7 @@ export default class Calculate {
   }
 
   calculate() {
-    let outcoume = this.result["outcome"];
+    let outcoume = parseFloat(this.result["outcome"]);
     let current  = parseFloat(this.result["current"]);
     
     switch (this.result["operator"]) {
@@ -43,6 +43,6 @@ export default class Calculate {
         break;
     }
 
-    this.result["outcome"] = outcoume;
+    this.result["outcome"] = outcoume.toString();
   }
 }

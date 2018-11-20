@@ -6,7 +6,7 @@ exports[`<Index /> matches snapshot 1`] = `
     className="calculator"
   >
     <Display
-      display={0}
+      display="0"
     >
       <div
         className="display"

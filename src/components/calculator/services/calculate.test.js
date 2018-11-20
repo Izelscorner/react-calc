@@ -45,7 +45,7 @@ describe('Calculate Function', () => {
         calculate.process('5');
         calculate.process('=');
         let result = calculate.result;
-        expect(result.outcome).toEqual(10);
+        expect(result.outcome).toEqual('10');
     })
     
 
@@ -58,7 +58,7 @@ describe('Calculate Function', () => {
         calculate.process('5');
         calculate.process('=');
         let result = calculate.result;
-        expect(result.outcome).toEqual(10.5);
+        expect(result.outcome).toEqual('10.5');
     })
 
     test('Concurrent all 4 operations', () => {
@@ -80,7 +80,7 @@ describe('Calculate Function', () => {
         calculate.process('=');
 
         let result = calculate.result;
-        expect(result.outcome).toEqual(5);
+        expect(result.outcome).toEqual('5');
     })
 
     test('Edge case initial value as an operator', () => {
@@ -91,7 +91,7 @@ describe('Calculate Function', () => {
         calculate.process('4');
         calculate.process('=');
         let result = calculate.result;
-        expect(result.outcome).toEqual(16);
+        expect(result.outcome).toEqual('16');
     })
 
 })
