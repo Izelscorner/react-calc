@@ -6,9 +6,11 @@ import toJson from 'enzyme-to-json';
 describe('<Button />', () => {
   let wrapper;
   let handleEvent;
+  let handleBlur;
 
   beforeAll(() => {
     handleEvent = jest.fn();
+    handleBlur  = jest.fn();
     wrapper = shallow(<Button handleEvent={handleEvent} value="1" />);
   });
 
@@ -31,7 +33,7 @@ describe('<Button />', () => {
   it('calls handleEvent on button click', function () {
     const button = wrapper.find('button');
     expect(button).toHaveLength(1);
-    button.simulate('click',{target:{blur: jest.fn()}});
+    button.simulate('click',{target:{blur: handleBlur}});
     expect(handleEvent).toHaveBeenCalledWith("1");
   });
 });
