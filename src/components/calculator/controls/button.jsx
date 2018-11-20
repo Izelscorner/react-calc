@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react';
 import "./button.css";
 export class Button extends PureComponent {
-  handleEvent = () => {
+  handleEvent = (e) => {
       this.props.handleEvent(this.props.value);
+      e.target.blur();
   }
   renderClassName() {
     let name = 'button';
@@ -15,7 +16,7 @@ export class Button extends PureComponent {
   }  
   render() {
     return (
-        <button className={this.renderClassName()} onClick={this.handleEvent}>{this.props.value}</button>
+        <button className={this.renderClassName()} onClick={(e) => this.handleEvent(e)}>{this.props.value}</button>
     )
   }
 }

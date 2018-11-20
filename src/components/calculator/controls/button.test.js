@@ -31,7 +31,7 @@ describe('<Button />', () => {
   it('calls handleEvent on button click', function () {
     const button = wrapper.find('button');
     expect(button).toHaveLength(1);
-    button.simulate('click');
+    button.simulate('click',{target:{blur: jest.fn()}});
     expect(handleEvent).toHaveBeenCalledWith("1");
   });
 });

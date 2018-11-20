@@ -9,11 +9,31 @@ export default class Calculator extends Component {
     this.calculate = new Calculate();
     this.state = this.calculate.result;
   }
+
+  componentDidMount() {
+    this.handleKeyPress();
+  }
+
+  handleKeyPress() {
+    document.addEventListener('keydown', (e) => {
+      e.preventDefault()
+      if(e.key.match(/([0-9])?([+-/*.])?/g)[0].length > 0 || e.key === "Backspace" || e.key === "Enter") {
+        this.handleEvent(e.key);
+      }
+    })
+  }
   
   handleEvent = (value) => {
     if(value === 'AC') {
       this.calculate.reset();
-    } else {
+    } 
+    else if(value === "Backspace"){
+      this.calculate.deleteChar();
+    } 
+    else if(value === "Enter"){
+      this.calculate.process("=");
+    }
+    else {
       this.calculate.process(value);
     }
 
