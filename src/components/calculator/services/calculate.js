@@ -18,6 +18,16 @@ export default class Calculate {
       this.calculate();
       this.result["operator"] = value;
       this.result["current"] = null;
+    } else if (this.result["operator"] === '=') {
+      this.result["operator"] = value;
+    }
+  }
+
+  deleteChar() {
+    if(this.result["current"] && this.result["current"].length > 0) {
+      this.result["current"] =this.result["current"].slice(0, -1);
+    } else {
+      this.result["current"]  = 0;
     }
   }
 
